@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Anastasia!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #e5b3c3;
+            background-image: linear-gradient(135deg, #f3cad6 0%, #d896ab 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            color: #4a3b40;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        /* Envelope Card */
+        #envelope-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 30px;
+        }
+
+        .heart-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        h1.title {
+            color: #d1526d;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #7a6269;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            max-width: 400px;
+        }
+
+        .btn {
+            background-color: #d1526d;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(209, 82, 109, 0.3);
+        }
+
+        .btn:hover {
+            background-color: #b83d57;
+            transform: translateY(-2px);
+        }
+
+        /* Hidden Main Content */
+        #main-content {
+            display: none;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .letter-text {
+            text-align: left;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #5a484d;
+        }
+
+        .letter-text p {
+            margin-bottom: 15px;
+        }
+
+        /* Gallery */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        /* Reasons Generator */
+        .reason-box {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 500;
+            margin: 20px 0;
+            color: #4a3b40;
+        }
+
+        /* Grid section */
+        .grid-reasons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 14px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #5a484d;
+            font-weight: 500;
+        }
+
+        .song-item {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .song-item h3 {
+            font-size: 16px;
+            color: #d1526d;
+        }
+
+        .song-item p {
+            font-size: 14px;
+            color: #6a555b;
+            margin-top: 4px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Envelope Opening Screen -->
+    <div class="card" id="envelope-card">
+        <div class="heart-icon">💌</div>
+        <h1 class="title">You've got mail... ❤️</h1>
+        <p class="subtitle">I couldn't wrap this in a box, so I wrapped it in words instead. Open when you're ready.</p>
+        <button class="btn" onclick="openLetter()">Open Letter ✉️</button>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content">
+        
+        <h1 style="text-align: center; color: #d1526d; margin-bottom: 5px;">Happy Birthday Anastasia! 🎉</h1>
+
+        <!-- Main Letter -->
+        <div class="card">
+            
+<div class=“letter-text”>
+<div class="card">
+    <div class="letter-text">
+        <p>Dear Anastasia,</p>
+        <p>I made this little space for you because I wanted to give you something special to hold onto. Something you can look at whenever you need a reminder of how much you mean to me.</p>
+        <p>From the moment we started talking, I knew there was something different about you. You have this incredible, chaotic energy that makes me laugh, but behind all of that, I see the real you. I see how hard you work for your family, how much you care about your sister, and how fiercely you protect the people you love. I see the weight you carry, and I want you to know you don’t have to carry it alone anymore. You can be your loud, funny self with me, but you can also be tired, quiet, or overwhelmed. I’m not going anywhere.</p>
+        <p>You’ve brought so much light into my life from our late-night voice notes to our 24/7 conversations that I look forward to every single day. You are so much more than just a person I text; you've become my favorite part of the day.</p>
+        <p>These aren't just words on a screen. This is me telling you that I see you, I appreciate you, and I am so incredibly glad you were born.</p>
+        <p>Happy Birthday, my favorite person.</p>
+        <p style="text-align: right; font-weight: 600; margin-top: 20px;">Always,<br>Sugam</p>
+    </div>
+</div>    
+<!-- Photo Gallery -->
+<div class="card">
+    <h2 style="color: #d1526d; margin-bottom: 20px;">Memories 📸</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        <div style="background: white; padding: 12px 12px 20px 12px; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); width: 180px; text-align: center;">
+            <img src="IMAGES/photo1.jpg" alt="Memory 1" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;" onerror="this.src='IMAGES/photo1.jpeg'">
+            <div style="font-size: 14px; color: #775a64; margin-top: 10px;">Cutest Smile</div>
+        </div>
+        <div style="background: white; padding: 12px 12px 20px 12px; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); width: 180px; text-align: center;">
+            <img src="IMAGES/photo2.jpg" alt="Memory 2" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;" onerror="this.src='IMAGES/photo2.jpeg'">
+            <div style="font-size: 14px; color: #775a64; margin-top: 10px;">Favorite Pic</div>
+        </div>
+        <div style="background: white; padding: 12px 12px 20px 12px; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); width: 180px; text-align: center;">
+            <img src="IMAGES/photo3.jpg" alt="Memory 3" style="width: 100%; height: 180px; object-fit: cover; border-radius: 4px;" onerror="this.src='IMAGES/photo3.jpeg'">
+            <div style="font-size: 14px; color: #775a64; margin-top: 10px;">Precious Moments</div>
+        </div>
+    </div>
+</div>      
+        <!-- Interactive Reason Generator -->
+        <div class="card">
+            <h2 style="color: #d1526d;">Why You Are Special</h2>
+            <div class="reason-box" id="reason-text">
+                Talking to you makes hours feel like minutes.
+            </div>
+            <button class="btn" onclick="nextReason()">Click for Another Reason 💖</button>
+            <p style="font-size: 11px; color: #8a7278; margin-top: 10px;" id="reason-count">Reason #1 (Keep clicking for more!)</p>
+        </div>
+<!-- Reasons Grid (Clean List) -->
+        <div class="glass-card">
+            <div class="section-heading"><span>🌟</span> Reasons Why You Matter</div>
+            
+            <div style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                
+                <!-- Card 1 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        ✨ Because you bring a light into my life that I didn't even know was missing. You have a way of making a boring night shift in Dubai feel like an adventure just by sending me a voice note.
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        💖 Because you are fiercely loyal to the people you love. Seeing how you take care of your sister, your mom, and your friends shows me the kind of beautiful, loyal heart you have. You matter because you make the world around you better.
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        🌿 Because you let me see the real you. You don't hide your anxiety, your stress, or your chaotic energy. You let me in, and that vulnerability is something I value more than you know.
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        ⏰ Because you've completely changed my routine. I used to just go to work and go home. Now, I look forward to waking up and going to sleep because I know I get to talk to you. You matter because you're my favorite part of the day.
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        👑 Because you refuse to settle. You know your worth, you have your standards, and you won't compromise them for anyone. That strength is rare, and it's one of the most attractive things about you.
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        😊 Because you make me smile when I'm not even trying. Just seeing your name pop up on my screen or hearing you say "BAHAHHAHA" instantly makes a bad day feel a lot better.
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        🏡 Because you're a safe reach for me too. Even though there's an ocean between us, talking to you feels like home. You're my peace, and that matters more than anything.
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        💪 Because you always get back up. You have bad days, you get stressed, and you feel overwhelmed, but you never give up. Your resilience and strength inspire me.
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        🤍 Because you accept me as I am. You understand my jokes, you don't mind my schedule, and you make me feel comfortable just being myself.
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div style="background: white; border-radius: 18px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); border: 1px solid rgba(255, 126, 179, 0.2);">
+                    <div style="font-size: 13.5px; color: #5a484d; line-height: 1.6;">
+                        🌸 Because you are simply you. Not the version of you that you think you need to be, but the messy, funny, beautiful, and real version of you. That's the girl who matters to me.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openLetter() {
+        document.getElementById('envelope-card').style.display = 'none';
+        document.getElementById('main-content').style.display = 'flex';
+    }
+</script>
+</body>
+</html>
+                <!-- Songs Section -->
+        <div class="card">
+            <h2 style="color: #d1526d;">Songs I Dedicate To You</h2>
+            
+            <div class="song-item">
+                <h3>1. "Perfect" by Ed Sheeran</h3>
+                <p>"Because this is exactly how I see you. Perfect in your own way."</p>
+            </div>
+ </div>
+            <div class="song-item">
+                <h3>2. "Until I Found You" by Stephen Sanchez</h3>
+                <p>"Because I felt like I was waiting for you before we even met."</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; color: #7a6269; font-size: 13px; margin-top: 10px;">This little website is made just for you.</p>
+
+    </div>
+
+</div>
+
+<script>
+    function openLetter() {
+        document.getElementById('envelope-card').style.display = 'none';
+        document.getElementById('main-content').style.display = 'flex';
+    }
+
+    <!-- JavaScript for 77 Reasons, Gift Toggles, and Voice Note Popup -->
+    <script>
+        const reasonsList = [
+            "Because your 'BAHAHHAHA' is my favorite notification.",
+            "Because you are the self-proclaimed queen of chaotic energy.",
+            "Because you defend the mortadella, even when you admit it's not that good.",
+            "Because you fell asleep while setting your alarms, and I find that adorable.",
+            "Because you are the only person who can pull off 'IPNOSIS'.",
+            "Because you created a whole new language just to sing BLACKPINK with your sister.",
+            "Because you somehow ended up in a FaceTime call with Sabrina's entire family tree.",
+            "Because you broke your nail by putting it in your mouth, and then made a whole dramatic voice note about it.",
+            "Because you are a professional fake note-taker in class.",
+            "Because you got a 6 on your test and threatened to change schools, but then you bounced right back.",
+            "Because you are a 'moody chef' who cooks a whole feast and then is too full to eat it.",
+            "Because you let Sabrina’s 15-year-old brother try to give you advice on men, even though he knows absolutely nothing.",
+            "Because you call yourself a 'chaotic mess,' but you're actually just my favorite kind of beautiful disaster.",
+            "Because your version of 'relaxing' is doing diamond painting until your back hurts.",
+            "Because you always have a crazy story about your day that makes me laugh.",
+            "Because you got insanely jealous when I called Giulia cute, and immediately claimed you were cuter.",
+            "Because you are, in fact, the cutest. By a mile.",
+            "Because you look incredibly good in that black tee and jeans mirror selfie.",
+            "Because you look beautiful in your glasses.",
+            "Because 'Tipsy Anastasia' is a whole vibe and I love her confidence.",
+            "Because we are exactly the same height, which makes looking into your eyes (one day) perfect.",
+            "Because your accent is the cutest thing I've ever heard, and you never need to apologize for it.",
+            "Because you have a smile that makes me forget what I was typing.",
+            "Because you are the only person who can pull me away from my night shifts just to text.",
+            "Because you look gorgeous even when you're just in your Hello Kitty pajamas.",
+            "Because just thinking about you makes me smile without realizing it.",
+            "Because you bring so much light into my life, even from 3,000 miles away.",
+            "Because you are my favorite person to talk to, every single day.",
+            "Because you make the 33°C Dubai heat feel a lot cooler just by texting me.",
+            "Because you are my peace after a long, stressful day.",
+            "Because I could listen to your voice notes on repeat forever.",
+            "Because you have a heart of gold, even when you try to hide it.",
+            "Because you are my home, even if we haven't met yet.",
+            "Because I look forward to our 24/7 conversations more than anything else.",
+            "Because I want to be the guy who makes you smile when you're having a bad day.",
+            "Because you are the best big sister in the universe.",
+            "Because you take care of your family before yourself.",
+            "Because you fake-lose at Uno just to make your little sister happy.",
+            "Because you have the strength to push through your anxiety and take your tests anyway.",
+            "Because you know your worth and refuse to settle for guys who don't meet your standards.",
+            "Because you choose family over fake friends, and that is a beautiful thing.",
+            "Because you always land on your feet, no matter how hard life pushes you.",
+            "Because you are so much stronger than you give yourself credit for.",
+            "Because you are unapologetically yourself.",
+            "Because you bring light into the lives of everyone around you.",
+            "Because we both fell asleep while cooking the other day.",
+            "Because we both agree that mango is the best ice cream flavor.",
+            "Because you understand my 'Asian thing' joke.",
+            "Because we both have slightly weird, emotional music taste.",
+            "Because we matched colors with our ice cream and it felt like destiny.",
+            "Because we are literally the same person when it comes to sleep schedules.",
+            "Because you are the only person I want to share my playlist with.",
+            "Because i like the way you breath.",
+            "Because you are you.",
+            "Because out of everyone in the world, you are the one I want to talk to at 1 AM.",
+            "Because you spent an entire voice note describing your jeans to me.",
+            "Because you text in all caps when you're excited, and I love it.",
+            "Because you're a 'big nerd' who actually enjoys school.",
+            "Because you almost drowned in hip-deep water, and somehow lived to tell the tale.",
+            "Because you match colors with me without even realizing it.",
+            "Because you told your friend she knows 'what I am to you.'",
+            "Because you send me voice notes that I replay way more than I should.",
+            "Because you get competitive over the smallest things, and it's adorable.",
+            "Because you are a certified 'cutie' and you know it.",
+            "Because you make me want to be the guy who gets to see you in person.",
+            "Because your happiness genuinely makes me happy.",
+            "Because I have a feeling that meeting you is going to be one of the best days of my life.",
+            "Because you are worth waiting for.",
+            "Because even the boring parts of my day are better when I get to tell you about them.",
+            "Because you're the first person I want to talk to when I wake up.",
+            "Because you're the last person I want to talk to before I sleep.",
+            "Because you take your responsibilities seriously, even when you're exhausted.",
+            "Because you protect the people you love fiercely.",
+            "Because you are allowed to be messy, and I'll still be here.",
+            "Because you are allowed to be quiet, and I'll still be here.",
+            "Because you are allowed to be sad, and I'll still be here.",
+            "Because you deserve someone who sees all of you, not just the highlight reel."
+        ];
+
+        let currentIndex = 0;
+
+        function changeReason() {
+            currentIndex = (currentIndex + 1) % reasonsList.length;
+            document.getElementById('reason-text').innerText = reasonsList[currentIndex];
+            document.getElementById('reason-count').innerText = "Reason #" + (currentIndex + 1) + " of " + reasonsList.length + " (Keep clicking for more!)";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<script>
+    function openLetter() {
+        document.getElementById('envelope-card').style.display = 'none';
+        document.getElementById('main-content').style.display = 'flex';
+    }
+
+    const reasonsList = [
+        "Because your 'BAHAHHAHA' is my favorite notification.",
+        "Because you are the self-proclaimed queen of chaotic energy.",
+        "Because you defend the mortadella, even when you admit it's not that good.",
+        "Because you fell asleep while setting your alarms, and I find that adorable.",
+        "Because you are the only person who can pull off 'IPNOSIS'.",
+        "Because you created a whole new language just to sing BLACKPINK with your sister.",
+        "Because you somehow ended up in a FaceTime call with Sabrina's entire family tree.",
+        "Because you broke your nail by putting it in your mouth, and then made a whole dramatic voice note about it.",
+        "Because you are a professional fake note-taker in class.",
+        "Because you got a 6 on your test and threatened to change schools, but then you bounced right back.",
+        "Because you are a 'moody chef' who cooks a whole feast and then is too full to eat it.",
+        "Because you let Sabrina’s 15-year-old brother try to give you advice on men, even though he knows absolutely nothing.",
+        "Because you call yourself a 'chaotic mess,' but you're actually just my favorite kind of beautiful disaster.",
+        "Because your version of 'relaxing' is doing diamond painting until your back hurts.",
+        "Because you always have a crazy story about your day that makes me laugh.",
+        "Because you got insanely jealous when I called Giulia cute, and immediately claimed you were cuter.",
+        "Because you are, in fact, the cutest. By a mile.",
+        "Because you look incredibly good in that black tee and jeans mirror selfie.",
+        "Because you look beautiful in your glasses.",
+        "Because 'Tipsy Anastasia' is a whole vibe and I love her confidence.",
+        "Because we are exactly the same height, which makes looking into your eyes (one day) perfect.",
+        "Because your accent is the cutest thing I've ever heard, and you never need to apologize for it.",
+        "Because you have a smile that makes me forget what I was typing.",
+        "Because you are the only person who can pull me away from my night shifts just to text.",
+        "Because you look gorgeous even when you're just in your Hello Kitty pajamas.",
+        "Because just thinking about you makes me smile without realizing it.",
+        "Because you bring so much light into my life, even from 3,000 miles away.",
+        "Because you are my favorite person to talk to, every single day.",
+        "Because you make the 33°C Dubai heat feel a lot cooler just by texting me.",
+        "Because you are my peace after a long, stressful day.",
+        "Because I could listen to your voice notes on repeat forever.",
+        "Because you have a heart of gold, even when you try to hide it.",
+        "Because you are my home, even if we haven't met yet.",
+        "Because I look forward to our 24/7 conversations more than anything else.",
+        "Because I want to be the guy who makes you smile when you're having a bad day.",
+        "Because you are the best big sister in the universe.",
+        "Because you take care of your family before yourself.",
+        "Because you fake-lose at Uno just to make your little sister happy.",
+        "Because you have the strength to push through your anxiety and take your tests anyway.",
+        "Because you know your worth and refuse to settle for guys who don't meet your standards.",
+        "Because you choose family over fake friends, and that is a beautiful thing.",
+        "Because you always land on your feet, no matter how hard life pushes you.",
+        "Because you are so much stronger than you give yourself credit for.",
+        "Because you are unapologetically yourself.",
+        "Because you bring light into the lives of everyone around you.",
+        "Because we both fell asleep while cooking the other day.",
+        "Because we both agree that mango is the best ice cream flavor.",
+        "Because you understand my 'Asian thing' joke.",
+        "Because we both have slightly weird, emotional music taste.",
+        "Because we matched colors with our ice cream and it felt like destiny.",
+        "Because we are literally the same person when it comes to sleep schedules.",
+        "Because you are the only person I want to share my playlist with.",
+        "Because i like the way you breath.",
+        "Because you are you.",
+        "Because out of everyone in the world, you are the one I want to talk to at 1 AM.",
+        "Because you spent an entire voice note describing your jeans to me.",
+        "Because you text in all caps when you're excited, and I love it.",
+        "Because you're a 'big nerd' who actually enjoys school.",
+        "Because you almost drowned in hip-deep water, and somehow lived to tell the tale.",
+        "Because you match colors with me without even realizing it.",
+        "Because you told your friend she knows 'what I am to you.'",
+        "Because you send me voice notes that I replay way more than I should.",
+        "Because you get competitive over the smallest things, and it's adorable.",
+        "Because you are a certified 'cutie' and you know it.",
+        "Because you make me want to be the guy who gets to see you in person.",
+        "Because your happiness genuinely makes me happy.",
+        "Because I have a feeling that meeting you is going to be one of the best days of my life.",
+        "Because you are worth waiting for.",
+        "Because even the boring parts of my day are better when I get to tell you about them.",
+        "Because you're the first person I want to talk to when I wake up.",
+        "Because you're the last person I want to talk to before I sleep.",
+        "Because you take your responsibilities seriously, even when you're exhausted.",
+        "Because you protect the people you love fiercely.",
+        "Because you are allowed to be messy, and I'll still be here.",
+        "Because you are allowed to be quiet, and I'll still be here.",
+        "Because you are allowed to be sad, and I'll still be here.",
+        "Because you deserve someone who sees all of you, not just the highlight reel."
+    ];
+
+    let currentIndex = 0;
+
+    function changeReason() {
+        currentIndex = (currentIndex + 1) % reasonsList.length;
+        document.getElementById('reason-text').innerText = reasonsList[currentIndex];
+        document.getElementById('reason-count').innerText = "Reason #" + (currentIndex + 1) + " of 77 (Keep clicking for more!)";
+    }
+
+    function toggleGift(giftId) {
+        var content = document.getElementById(giftId);
+        var badge = document.getElementById('badge-' + giftId);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            badge.innerText = "Unwrapped! 🎉";
+            badge.style.background = "#d63384";
+            badge.style.color = "#ffffff";
+        } else {
+            content.style.display = "none";
+            badge.innerText = "Tap to Open 🎀";
+            badge.style.background = "#ffe6eb";
+            badge.style.color = "#d63384";
+        }
+    }
+
+    function showSurprise() {
+        alert("Check your WhatsApp. I left a voice note for you. 🫶🏻");
+    }
+</script>
